@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				display: flex;
+			}
+			
+			span {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: greenyellow;
+				text-align: center;
+				line-height: 100px;
+				margin: 10px;
+			}
+			
+			.col1 {
+				font-size: 16px;
+				flex-grow: 1;
+			}
+			
+			.col2 {
+				font-size: 18px;
+				flex-grow: 1;
+			}
+			
+			.col3 {
+				font-size: 20px;
+				flex-grow: 2;
+			}
+			
+			.col4 {
+				font-size: 22px;
+				flex-grow: 1;
+			}
+			
+			.col5 {
+				font-size: 24px;
+				flex-grow: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+		如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
+		-->
+	</body>
+	<div class="box">
+		<span class="col1">1</span>
+		<span class="col2">2</span>
+		<span class="col3">3</span>
+		<span class="col4">4</span>
+		<span class="col5">5</span>
+	</div>
+
+</html>

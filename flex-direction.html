@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+				* {
+					margin: 0;
+					padding: 0;
+				}
+				.box {
+					display: flex;
+					flex-direction: column;
+					flex-direction: column-reverse;
+					flex-direction: row;
+					flex-direction: row-reverse;
+				}
+				span {
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+					background: greenyellow;
+					text-align: center;
+					line-height: 100px;
+					margin: 10px;
+				}
+			</style>
+	</head>
+	<body>
+		<!--
+		flex-direction有四个值：
+			- row（默认值）: 主轴为水平方向，起点在左端
+			- row-reverse： 主轴为水平方向，起点在右端
+			- column: 主轴为垂直方向，起点在上沿
+			- column-reverse：主轴为垂直方向，起点在下沿。
+		-->
+	</body>
+	<div class="box">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+		<span>5</span>
+	</div>
+</html>

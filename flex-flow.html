@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				display: flex;
+				flex-flow: column nowrap; /*纵向，不换行*/
+				flex-flow: column wrap-reverse;/*纵向，换行，第一行在下方*/
+				flex-flow: row wrap-reverse;/*水平，换行，第一行在下方*/
+				flex-flow: row wrap;/*水平，换行，第一行在上方*/
+				flex-flow: row-reverse wrap-reverse; /*水平，起点在右端。换行，第一行在下方*/
+				flex-flow: row-reverse wrap;/*水平，起点在右端。换行，第一行在上方*/
+			}
+			
+			span {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: greenyellow;
+				text-align: center;
+				line-height: 100px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+			
+			flex-flow是flex-deriction和flex-wrap的简写形式
+			默认值为： row nowrap
+		-->
+	</body>
+	<div class="box">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+		<span>5</span>
+		<span>6</span>
+		<span>7</span>
+		<span>8</span>
+		<span>9</span>
+		<span>10</span>
+	</div>
+
+</html>

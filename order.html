@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				display: flex;
+			}
+			
+			span {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: greenyellow;
+				text-align: center;
+				line-height: 100px;
+				margin: 10px;
+			}
+			
+			.col1 {
+				font-size: 16px;
+				order: 1;
+			}
+			
+			.col2 {
+				font-size: 18px;
+				order: 2;
+			}
+			
+			.col3 {
+				font-size: 20px;
+				order: 3;
+			}
+			
+			.col4 {
+				font-size: 22px;
+				order: 4;
+			}
+			
+			.col5 {
+				font-size: 24px;
+				order: 2;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+		order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+		-->
+	</body>
+	<div class="box">
+		<span class="col1">1</span>
+		<span class="col2">2</span>
+		<span class="col3">3</span>
+		<span class="col4">4</span>
+		<span class="col5">5</span>
+	</div>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.box {
+				display: flex;
+				align-items: flex-end;
+				align-items: center;
+				align-items: baseline; /*项目的第一行文字的基线(文字底部)对齐*/
+				align-items: stretch; /*如果项目未设置高度或设为auto，将占满整个容器的高度。*/
+				height: 300px;
+			}
+			
+			span {
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: greenyellow;
+				text-align: center;
+				line-height: 100px;
+				margin: 10px;
+			}
+			.col1 {
+				font-size: 16px;
+			}
+			.col2 {
+				font-size: 18px;
+			}
+			.col3 {
+				font-size: 20px;
+			}
+			.col4 {
+				font-size: 22px;
+			}
+			.col5 {
+				font-size: 24px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--
+			它可能取5个值。具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下。
+
+			- flex-start：交叉轴的起点对齐。
+			- flex-end：交叉轴的终点对齐。
+			- center：交叉轴的中点对齐。
+			- baseline: 项目的第一行文字的基线对齐。
+			- stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+
+			
+		-->
+	</body>
+	<div class="box">
+		<span class="col1">1</span>
+		<span class="col2">2</span>
+		<span class="col3">3</span>
+		<span class="col4">4</span>
+		<span class="col5">5</span>
+	</div>
+
+</html>
